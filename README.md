@@ -1,2 +1,2 @@
 # cesium-system
-基于Cesiumjs开发的数字星球展示系统
+基于Cesium开发的数字星球展示系统
