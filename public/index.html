@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../Cesium-1.80/Build/Cesium/Widgets/widgets.css">
+    <script src="../Cesium-1.80/Build/Cesium/Cesium.js"></script>
+    <style>
+        html,
+        body,
+        #cesiumContainer {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-<script type="module">
-    import * as Cesium from 'cesium'
+<div id="cesiumContainer"></div>
+<script>
+    ///import * as Cesium from '../node_modules/cesium/Build/Cesium/Cesium.js'
+    //import Viewer from ''
+    //import
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0NzUwYmRlOC1lYmQ3LTQwMDQtOTlkNi1lODU4MTJjZDhlYTQiLCJpZCI6MzkxMzQsImlhdCI6MTYyOTIwOTI2NH0.2yfRM63XVD7K9H-IGSPOr6vm1ULyP4JSbUjOf7eufTU';
+    let viewer = new Cesium.Viewer('cesiumContainer');
 </script>
 </body>
 </html>
